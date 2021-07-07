@@ -11,7 +11,6 @@
 
 ```bash
 {
-        "id": "1",
         "title": "Harry Potter 3",
         "author": "JK Rowling",
         "pdate": "2004",
