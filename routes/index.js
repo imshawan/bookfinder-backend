@@ -27,14 +27,14 @@ router.delete('/', cors.corsWithOptions, function(req, res, next) {
 
 //-----------------------------------------------------------------
 
-router.options('/getAllBooks',cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+router.options('/getAllBooks', cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
 router.get('/getAllBooks', cors.cors, function(req, res, next){
   res.setHeader('Content-Type', 'application/json');
   res.statusCode = 200;
   res.json(entries.getAllEntries())
 });
 
-router.put('/getAllBooks',cors.corsWithOptions, function(req, res, next) {
+router.put('/getAllBooks', cors.corsWithOptions, function(req, res, next) {
   res.statusCode = 403;
   res.end('<h1>PUT operation is not supported</h1>');
 });
@@ -51,7 +51,7 @@ router.delete('/getAllBooks', cors.corsWithOptions, function(req, res, next) {
 
 //-----------------------------------------------------------------
 
-router.options('/addBooks',cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+router.options('/addBooks', cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
 
 router.get('/addBooks', cors.cors, function(req, res, next) {
   res.statusCode = 403;
